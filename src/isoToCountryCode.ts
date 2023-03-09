@@ -7,6 +7,7 @@ function isoToCountryCode(isoCode: string, keyToGet: 'alpha2' | 'alpha3' | 'nume
       countryObj.alpha2 === isoCode
       || countryObj.alpha3 === isoCode
       || countryObj.numeric === isoCode
+      || countryObj.iso4217 === isoCode
     ))[keyToGet]
     return alpha2Code
   }
